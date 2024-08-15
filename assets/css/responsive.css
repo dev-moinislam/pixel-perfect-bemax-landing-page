@@ -347,20 +347,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (max-width: 480px) {
- 
   .blog-content {
-    padding: 15px;
+      padding: 15px;
   }
 
   .blog-content h3 {
-    font-size: 1rem;
+      font-size: 1rem;
   }
 
   .blog-content p {
-    font-size: 0.85rem;
+      font-size: 0.85rem;
+  }
+  .extra-category-des{
+    font-size: 10px !important;
   }
   .blog-next,.testimonial-next {
-      right: 21%;
+      right: 20%;
 
   }
   .blog-prev,.testimonial-prev{
