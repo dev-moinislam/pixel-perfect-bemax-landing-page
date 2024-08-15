@@ -335,7 +335,6 @@ h1, h2, h3, h4, h5, h6, p {
     top: -30px;
 }
 }
-
 @media (max-width: 800px) {
   .blog-next,.testimonial-next {
       right: 60%;
@@ -345,6 +344,17 @@ h1, h2, h3, h4, h5, h6, p {
       left: 33%;  
   }
 }
+
+@media (max-width: 650px) {
+  .blog-next,.testimonial-next {
+      right: 45%;
+  
+  }
+  .blog-prev,.testimonial-prev{
+      left: 45%;  
+  }
+}
+
 
 @media (max-width: 480px) {
   .blog-content {
