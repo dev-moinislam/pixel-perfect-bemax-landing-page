@@ -1,0 +1,435 @@
+/* Google font -- Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    /* text color */
+    --section-txt-dark: #333333;
+    --section-txt-light: #ffffff;
+    --section-item-title-light: #e6e6e6; 
+    --section-item-subtitle-light: #cccccc; 
+    --section-item-title-dark: #555555;
+    --section-item-subtitle-dark: #666666;
+    --btn-txt-clr: #ffffff;
+    --hero-txt-clr: #ffffff;
+    --menu-item-clr: #666666;
+
+    /* bg color */
+    --section-bg-white: #ffffff;
+    --section-bg-gray: #efefef;
+    --section-bg-black1: #212121;
+    --section-bg-black2: #161a21;
+    --bg-blue: #4f7ad6;
+    
+    /* icon color */
+    --icon-light: #ffffff;
+    --icon-dark: #555555;
+    --icon-gray: #999999;
+
+    /* Fonts family */
+    --text-font: "Lato", sans-serif;
+
+    /* font-weight */
+    --lato-regular: 400;
+    --lato-bold: 700;
+    --lato-black: 900;
+
+    /* Font size */
+    --sec-fs: 20px;
+    --title-fs: 16px;
+    --subtitle-fs: 15px;
+    --menu-fs: 15px;
+    --btn-fs: 15px;
+    --hero-sm-fs:30px;
+    --hero-lg-fs:72px;
+}
+
+/*
+==========================================
+        Initial Css
+==========================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/*******************************
+	All Responsive Code
+*******************************/
+
+/*
+==========================================
+        Responsive Header Css Start
+==========================================
+*/
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        height: 100%;
+        background-color: var(--section-bg-white);
+        color: var(--menu-item-clr);
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease-in-out;
+		z-index: 5;
+    }
+
+	.nav-links .horizontal{
+		display: none;
+	}
+	.nav-links .vertical{
+		display: flex;
+	}
+
+    .nav-links.nav-open {
+        right: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+/*
+==========================================
+        Responsive Header Css End
+==========================================
+*/
+
+
+/*
+==========================================
+        Responsive Hero Section Css Start
+==========================================
+*/
+@media (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .hero-text p {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .slick-dots {
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .slick-prev, .slick-next {
+        width: 25px;
+        height: 25px;
+    }
+}
+/*
+==========================================
+    Responsive Hero Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Responsive Hire Us Section Css Start
+==========================================
+*/
+@media (max-width: 768px) {
+    .hire-us-container{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+/*
+==========================================
+    Responsive Hire us Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Responsive Analysis Section Css Start
+==========================================
+*/
+@media (max-width: 1200px) {
+    .analysis-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        width: 100%;
+    }
+}
+/*
+==========================================
+    Responsive Analysis Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Responsive Feature Section Css Start
+==========================================
+*/
+@media (max-width: 992px) {
+    .feature-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .feature-icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/*
+==========================================
+    Responsive Feature Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Why Choose Us Section Css Start
+==========================================
+*/
+@media (max-width: 768px) {
+    .info-section{
+        height: auto;
+    }
+    .why-choose-us-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .video-section{
+        flex: none;
+    }
+    .info-section, .video-section{
+        width: 100%;
+    }
+    
+}
+/*
+==========================================
+    Why Choose Us Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Working with Us Section Css Start
+==========================================
+*/
+@media (max-width: 990px) {
+    .workus-img-container{
+        display: none;
+    }
+    .working-us-section{
+        height: 400px;
+    }
+}
+@media (max-width: 990px) {
+    .working-us-des{
+        padding: 0 20px;
+    }
+}
+/*
+==========================================
+    Working with Us Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+    Overview Section Css Start
+==========================================
+*/
+@media (max-width: 1000px) {
+  .blog-section{
+    flex-direction: column;
+  }  
+  .blog-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .blog-content p {
+    font-size: 0.7rem;
+  }
+.blog-next,.testimonial-next {
+    right: 68%;
+
+}
+.blog-prev,.testimonial-prev{
+    left: 26%;  
+}
+.testimonial-prev, .testimonial-next{
+    top: -30px;
+}
+}
+
+@media (max-width: 800px) {
+  .blog-next,.testimonial-next {
+      right: 60%;
+  
+  }
+  .blog-prev,.testimonial-prev{
+      left: 33%;  
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .blog-content {
+    padding: 15px;
+  }
+
+  .blog-content h3 {
+    font-size: 1rem;
+  }
+
+  .blog-content p {
+    font-size: 0.85rem;
+  }
+  .blog-next,.testimonial-next {
+      right: 21%;
+
+  }
+  .blog-prev,.testimonial-prev{
+      left: 62%;  
+  }
+  .testimonial-prev, .testimonial-next{
+      top: -30px;
+  }
+}
+/*
+==========================================
+    Overview Section Css Start
+==========================================
+/*
+
+
+/*
+==========================================
+    Company Contribution Section Css start
+==========================================
+*/
+@media (max-width: 390px) {
+    .company-img{
+        width: 150px;
+        padding: 10px 5px;
+      }
+  }
+/*
+==========================================
+    Company Contribution Section Css End
+==========================================
+*/
+
+
+/*
+==========================================
+        Footer Section Css Start
+==========================================
+*/
+@media (max-width: 1000px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-section {
+        height: auto;
+        padding: 50px 30px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .footer-section{
+        padding: 40px 5px;
+    }
+  }
+/*
+==========================================
+        Footer Section Css End
+==========================================
+*/
+
+
+
+
